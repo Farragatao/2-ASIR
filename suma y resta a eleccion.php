@@ -25,6 +25,10 @@
     <!-- Checkboxes para elegir la operación -->
     <input type="checkbox" name="check1"> Sumar<br>
     <input type="checkbox" name="check2"> Restar<br><br>
+    <input type="checkbox" name="check3"> Multiplicar<br><br>
+    <input type="checkbox" name="check4"> Dividir<br><br>
+
+
     
     <input type="submit" name="operar" value="Calcular">
   </form>
@@ -41,6 +45,10 @@
     // Realizar suma y resta sin comprobaciones adicionales
     $suma = $valor1 + $valor2 + $valor3 + $valor4 + $valor5;
     $resta = $valor1 - $valor2 - $valor3 - $valor4 - $valor5;
+    $multiplicacion = $valor1 * $valor2 * $valor3 * $valor4 * $valor5;
+    $dividir = $valor1 / $valor2 / $valor3 / $valor4 / $valor5;
+
+
 
     // Mostrar los resultados si se seleccionan los checkboxes
     if (isset($_POST['check1'])) {
@@ -48,6 +56,12 @@
     }
     if (isset($_POST['check2'])) {
       echo "La resta de los valores es: $resta<br>";
+    }
+    if (isset($_POST['check3'])) {
+        echo "La multiplicacion de los valores es: $multiplicacion<br>";
+    }
+    if (isset($_POST['check4'])) {
+        echo "La division de los valores es: $division<br>";
     }
   }
   ?>
