@@ -1,0 +1,20 @@
+//hacemos un formulario que pida nuestro nombre y donde vivivmos, y ahora este programa html llama a otro php que diga tu nombre y es tal y vives en tal sitio y este php llama a otro php  que visualice los datos.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulario de Información</h2>
+    <form action="procesar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
